@@ -1,0 +1,18 @@
+CRITICAL - 2026-04-30 07:02:39 --> ErrorException: Undefined variable $web
+[Method: GET, Route: wilayah]
+in APPPATH\Views\wilayah\v_index.php on line 56.
+ 1 APPPATH\Views\wilayah\v_index.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $web', 'C:\\laragon\\www\\gis\\app\\Views\\wilayah\\v_index.php', 56)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\gis\\app\\Views\\wilayah\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('wilayah/v_index', [], true)
+ 5 APPPATH\Views\v_template_back_end.php(195): view('wilayah/v_index')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\gis\\app\\Views\\v_template_back_end.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_template_back_end', [], true)
+ 9 APPPATH\Controllers\Wilayah.php(25): view('v_template_back_end', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Wilayah->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Wilayah))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

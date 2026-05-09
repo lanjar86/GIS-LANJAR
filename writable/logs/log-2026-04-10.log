@@ -1,0 +1,42 @@
+CRITICAL - 2026-04-10 09:42:44 --> ErrorException: Undefined variable $judul
+[Method: GET, Route: admin]
+in APPPATH\Views\v_template_back_end.php on line 11.
+ 1 APPPATH\Views\v_template_back_end.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $judul', 'C:\\laragon\\www\\gis\\app\\Views\\v_template_back_end.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\gis\\app\\Views\\v_template_back_end.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_template_back_end', [], true)
+ 5 APPPATH\Controllers\Admin.php(13): view('v_template_back_end', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 09:43:09 --> ErrorException: Undefined variable $judul
+[Method: GET, Route: admin]
+in APPPATH\Views\v_template_back_end.php on line 11.
+ 1 APPPATH\Views\v_template_back_end.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $judul', 'C:\\laragon\\www\\gis\\app\\Views\\v_template_back_end.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\gis\\app\\Views\\v_template_back_end.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_template_back_end', [], true)
+ 5 APPPATH\Controllers\Admin.php(13): view('v_template_back_end', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-10 09:43:10 --> ErrorException: Undefined variable $judul
+[Method: GET, Route: admin]
+in APPPATH\Views\v_template_back_end.php on line 11.
+ 1 APPPATH\Views\v_template_back_end.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $judul', 'C:\\laragon\\www\\gis\\app\\Views\\v_template_back_end.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\gis\\app\\Views\\v_template_back_end.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_template_back_end', [], true)
+ 5 APPPATH\Controllers\Admin.php(13): view('v_template_back_end', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
