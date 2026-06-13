@@ -23,6 +23,22 @@ if (session()->getFlashdata('insert')) {
     echo '</h5></div>';
 }
 
+if (session()->getFlashdata('update')) {
+    echo '<div class="alert alert-Primary alert-dismissible">
+<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+<h5><i class="icon fas fa-check"></i>';
+    echo session()->getFlashdata('update');
+    echo '</h5></div>';
+}
+
+if (session()->getFlashdata('delete')) {
+    echo '<div class="alert alert-danger alert-dismissible">
+<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+<h5><i class="icon fas fa-check"></i>';
+    echo session()->getFlashdata('delete');
+    echo '</h5></div>';
+}
+
 ?>
 
            <table id="example2" class="table table-bordered table-striped">
@@ -41,7 +57,10 @@ if (session()->getFlashdata('insert')) {
         <td><?= $no++ ?></td>
         <td><?= $value['nama_wilayah'] ?></td>
         <td style="background-color: <?= $value['warna'] ?>;"></td>
-        <td></td>
+        <td class="text-center">
+          <a href="<?= base_url('Wilayah/Edit/' . $value['id_wilayah']) ?>" class="btn btn-sm btn-warning btn-flat"><i class="fas fa-pencil-alt"></i></a>
+          <a href="<?= base_url('Wilayah/Delete/' . $value['id_wilayah']) ?>" onclick ="return confirm('Yakin Hapus Data...?')" class="btn btn-sm btn-danger btn-flat"><i class="fas fa-trash"></i></a>
+        </td>
       </tr>
     <?php } ?>
   </tbody>
