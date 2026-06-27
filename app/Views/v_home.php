@@ -23,8 +23,8 @@ var peta4 = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/
 	//}).addTo(map);//
 
     var map = L.map('map', {
-	center: [-0.8969324307109577, 100.37789834991125],
-	zoom: 12,
+	center: [<?= $web['coordinat_wilayah'] ?>],
+	zoom: <?= $web['zoom_view'] ?>,
 	layers: [peta1]
 });
 
@@ -36,5 +36,14 @@ var peta4 = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/
 };
 
 var layerControl = L.control.layers(baseMaps).addTo(map);
+<?php foreach ($wilayah as $key => $value) { ?>
+    L.geoJSON(<?= $value['geojson'] ?>, {
+        fillColor: '<?= $value['warna'] ?>',
+        fillOpacity: 0.5,
+    })
+    .bindPopup("<b><?= $value['nama_wilayah'] ?></b>")
+    .addTo(map);
+<?php } ?>
+</script>
 
 </script>

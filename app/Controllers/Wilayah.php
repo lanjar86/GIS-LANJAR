@@ -23,6 +23,7 @@ class Wilayah extends BaseController
     {
         $data = [
             'Judul'   => 'Wilayah',
+            'menu'    => 'wilayah',
             'page'    => 'wilayah/v_index',
             'wilayah' => $this->ModelWilayah->AllData(),
             'web'     => $this->ModelSetting->DataWeb(),
@@ -36,7 +37,9 @@ class Wilayah extends BaseController
         helper('form');
         return view('v_template_back_end', [
             'Judul' => 'Input Wilayah',
+            'menu'  => 'wilayah', // <-- TAMBAHKAN INI AGAR TIDAK ERROR UNDEFINED VARIABLE $menu
             'page'  => 'wilayah/v_input',
+            'web'   => $this->ModelSetting->DataWeb(), // <-- TAMBAHKAN INI JUGA JIKA TEMPLATE MEMBUTUHKAN DATA WEB
         ]);
     }
 
@@ -86,6 +89,7 @@ class Wilayah extends BaseController
         // Mengambil data wilayah spesifik berdasarkan ID untuk dilempar ke form edit
         $data = [
             'Judul'   => 'Edit Wilayah',
+            'menu'    => 'wilayah', // <-- TAMBAHKAN INI JUGA AGAR SAAT EDIT TIDAK ERROR UNDEFINED
             'page'    => 'wilayah/v_edit',
             'wilayah' => $this->ModelWilayah->DetailData($id_wilayah), // Pastikan di ModelWilayah sudah ada fungsi DetailData() ya!
             'web'     => $this->ModelSetting->DataWeb(),
@@ -134,7 +138,7 @@ class Wilayah extends BaseController
         }
     }
 
-     public function Delete($id_wilayah)
+    public function Delete($id_wilayah)
     {
         $data = [
             'id_wilayah' => $id_wilayah,

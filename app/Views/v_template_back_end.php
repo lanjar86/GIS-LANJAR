@@ -108,7 +108,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                 <li class="nav-item">
-            <a href= <?= base_url('Admin') ?> class="nav-link">
+            <a href= <?= base_url('Admin') ?> class="nav-link <?= $menu == 'dashboard' ? 'active' : '' ?>">
                <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -117,7 +117,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
 
           <li class="nav-item">
-           <a href="<?= base_url('wilayah') ?>" class="nav-link">
+           <a href="<?= base_url('wilayah') ?>" class="nav-link <?= $menu == 'wilayah' ? 'active' : '' ?>">
             <i class="nav-icon fas fa-map"></i>
            <p>
             Wilayah
@@ -125,29 +125,32 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </a>
           </li>
 
-          <li class="nav-item menu-open">
-            <a href="<?= base_url('Admin') ?>" class="nav-link active">
-                <i class="nav-icon fas fa-th"></i>
-              <p>
-                Starter Pages
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+         <li class="nav-item">
+    <a href="<?= base_url('User') ?>" class="nav-link">
+        <i class="nav-icon fas fa-users"></i>
+        <p>
+          User
+        </p>
+    </a>
+</li>
+
+         <li class="nav-item">
+    <a href="<?= base_url('Minimarket') ?>" class="nav-link">
+        <i class="nav-icon fas fa-store"></i>
+        <p>
+          Minimarket
+        </p>
+    </a>
+</li>
+
+         <li class="nav-item">
+    <a href="<?= base_url('Kategori') ?>" class="nav-link">
+        <i class="nav-icon fas fa-store-alt"></i>
+        <p>
+          Kategori
+        </p>
+    </a>
+</li>
 
          <li class="nav-item">
     <a href="<?= base_url('Admin/Setting') ?>" class="nav-link">

@@ -17,6 +17,7 @@ class Admin extends BaseController
     {
         $data = [
             'Judul' => 'Dashboard',
+            'menu'  => 'dashboard',
             'page' => 'v_dashboard',
         ];
 
@@ -27,6 +28,7 @@ public function Setting()
 {
     $data = [
         'Judul' => 'Setting',
+        'menu'  => 'setting',
         'page'  => 'v_setting',
         'web'   => $this->ModelSetting->DataWeb(),
     ];
