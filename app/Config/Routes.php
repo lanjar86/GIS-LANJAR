@@ -64,3 +64,10 @@ $routes->get('minimarket/Delete/(:num)', 'Minimarket::Delete/$1');
 // Tambahkan ini di Routes.php jika belum ada, untuk jaga-jaga penulisan URL
 $routes->get('Admin', 'Admin::index');
 $routes->get('admin', 'Admin::index');
+
+// Rute untuk Manajemen User
+$routes->get('User', 'User::index');
+$routes->get('user', 'User::index');
+$routes->post('User/InsertData', 'User::InsertData');
+$routes->post('User/UpdateData/(:num)', 'User::UpdateData/$1');
+$routes->get('User/Delete/(:num)', 'User::Delete/$1');
